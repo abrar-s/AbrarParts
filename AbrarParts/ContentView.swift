@@ -10,7 +10,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        List{
+            Spacer()
+            
+            ForEach(0..<5){  _ in
+                
+                
+                HStack{
+                    
+                    ForEach(0..<2){ _ in
+                       
+                        
+                        Image("image1")
+                        .resizable()
+                        .scaledToFit()
+                       
+                    
+                        
+                    }
+                }
+                
+            }
+        }
+        
+        
     }
 }
 
